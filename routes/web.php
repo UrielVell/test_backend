@@ -6,6 +6,11 @@ use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
 // Route::get('curso/{idg_curso}', function ($idg_curso) {
 //     $cursoProfa = cursoProfa::findOrFail($idg_curso);
 //         $academicos = $cursoProfa->academicos;
