@@ -46,7 +46,7 @@ return [
 
         'upload' => [
             'driver' => 'local',
-            'root' =>public_path(),
+            'root' =>storage_path('app/public'),
             'visibility' => 'public',
             //'throw' => false,
         ],
