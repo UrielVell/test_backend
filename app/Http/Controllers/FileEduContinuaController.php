@@ -25,7 +25,7 @@ class FileEduContinuaController extends Controller
     public function presupuesto($idCurso)
     {
         $cursoEduContinua = CursoEduContinua::findOrFail($idCurso);
-        $pdf = Pdf::loadView('EduContinua.presupuesto',  $cursoEduContinua->toArray());
+        $pdf = Pdf::loadView('EduContinua.Presupuesto',  $cursoEduContinua->toArray());
         return $pdf->download('Presupuesto.pdf');
     }
 
@@ -151,7 +151,7 @@ class FileEduContinuaController extends Controller
             $filename = $file->getClientOriginalName();
             $file->storeAs($path, $filename, 'upload');
 
-            $url = asset(url('/' . $path, $filename));
+            $url = asset(url('/storage/' . $path, $filename));
 
             $archivo = new ArchivoEduContinua();
             $archivo->idCursoEduContinua = $request->idCurso;
