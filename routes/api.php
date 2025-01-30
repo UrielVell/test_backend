@@ -96,7 +96,7 @@ Route::put('/cuerpoAcademicos/{cuerpoacademico}','App\Http\Controllers\CuerpoAca
 Route::delete('/cuerpoAcademicos/{cuerpoacademico}','App\Http\Controllers\CuerpoAcademicoController@destroy');
 
 //ruta de registrar
-Route::post('/register', [AuthController::class, 'register']);
+//Route::post('/register', [AuthController::class, 'register']);
 
 //ruta de login
 Route::post('/login', [AuthController::class, 'login']);
