@@ -101,7 +101,7 @@ class InstructorController extends Controller
         $filename = $file->getClientOriginalName();
         $file->storeAs($path, $filename, 'upload');
 
-        $url = asset(url('/' . $path, $filename));
+        $url = asset(url('/storage/' . $path, $filename));
 
         $archivo = new ArchivoInstructor();
         $archivo->rfc = $request->rfc;
