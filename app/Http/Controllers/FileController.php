@@ -29,7 +29,7 @@ class FileController extends Controller
         $filename = $file->getClientOriginalName();
         $file->storeAs($path, $filename, 'upload');
 
-        $url = asset(url('/' . $path, $filename));
+        $url = asset(url('/storage/' . $path, $filename));
 
         $save = new File();
         $save->noPersonal = $request->noPersonal;
