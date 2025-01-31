@@ -45,7 +45,7 @@
                 <td rowspan="3" ><strong>Honorarios de personal de apoyo</strong></td>
                 <td>a. Instructor</td>
                 <td>$0</td>
-                <td rowspan="3">$0</td>
+                <td rowspan="3">${{$honorariosPersonal}}</td>
             </tr>
             <tr>
                 <td>b. Coordinador</td>
@@ -57,7 +57,7 @@
             </tr>
             <tr>
                 <td colspan="3" style="text-align: end;"><strong><i>subtotal</i></strong></td>
-                <td style="background-color: #F3F6FB;">$0</td>
+                <td style="background-color: #F3F6FB;">${{$honorariosPersonal}}</td>
             </tr>
         </table>
         <table class="presupuesto">
