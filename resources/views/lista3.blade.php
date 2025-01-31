@@ -105,7 +105,16 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>Acreditado</td>
+                    @if( $academico['pivot']['calificacion'] >= 6)
+                    <td>
+                        Acreditado
+                    </td>
+                    
+                    @else
+                    <td>
+                        No Acreditado
+                    </td>
+                    @endif
                 </tr>
                 @endif
                 @endforeach
